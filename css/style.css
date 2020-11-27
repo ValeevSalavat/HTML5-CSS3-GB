@@ -17,10 +17,12 @@ body {
   color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.header__text {
-  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__text-title {
@@ -37,7 +39,8 @@ body {
 }
 
 .header__text-item {
-  padding: 0 0 15px 40px;
+  padding: 0 0 0 40px;
+  line-height: 32px;
   list-style-type: none;
   position: relative;
 }
@@ -61,18 +64,10 @@ body {
 }
 
 .header__img {
-  float: right;
   display: block;
   width: 469px;
   min-height: 214px;
   background-color: #fff;
-}
-
-.header:after {
-  content: "";
-  display: block;
-  width: 100%;
-  clear: both;
 }
 
 .about-product {
@@ -82,10 +77,15 @@ body {
   color: #445161;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about-product__text {
-  float: left;
   max-width: 600px;
 }
 
@@ -100,18 +100,14 @@ body {
   margin: 0 0 20px 0;
 }
 
+.about-product__text-item:last-child {
+  margin: 0;
+}
+
 .about-product__video-content {
-  float: right;
   width: 430px;
   min-height: 245px;
   background-color: #445162;
-}
-
-.about-product:after {
-  content: "";
-  display: block;
-  width: 100%;
-  clear: both;
 }
 
 .dignity {
@@ -132,19 +128,31 @@ body {
 }
 
 .dignity__list {
-  margin: 0 0 0 0;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .dignity__item {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  max-width: 527px;
+  max-width: 49%;
   list-style-type: none;
   margin: 0 0 35px 0;
   padding: 0 0 0 40px;
   position: relative;
-  display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -167,9 +175,24 @@ body {
   width: 100%;
   background-color: #fff;
   color: #445161;
-  padding: 50px;
+  padding: 50px 50px 30px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.screenshots__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .screenshots__title {
@@ -181,9 +204,8 @@ body {
 }
 
 .screenshots__figure {
-  margin: 0 0 0 0;
+  margin: 0 0 20px 0;
   max-width: 577px;
-  display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -217,5 +239,74 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #333333;
+}
+
+.buy-it-now__header-text {
+  margin: 0 0 29px 0;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #485564;
+}
+
+.buy-it-now__all-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.buy-it-now__price-block {
+  padding: 17px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #f5f5f5;
+  background-color: #445162;
+  border-radius: 5px;
+}
+
+.buy-it-now__head {
+  font-weight: normal;
+  margin: 0 0 17px 0;
+  font-size: 24px;
+}
+
+.buy-it-now__price {
+  display: block;
+  margin: 0 0 0 0;
+  font-size: 40px;
+  width: 99%;
+  text-align: center;
+  color: #445162;
+  background-color: #f5f5f5;
+}
+
+.buy-it-now__list {
+  margin: 20px 29px 12px 0;
+  line-height: 25px;
+}
+
+.buy-it-now__button {
+  color: #445162;
+  background-color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 0 14px 0;
+  width: 260px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
