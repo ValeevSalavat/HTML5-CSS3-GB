@@ -241,6 +241,10 @@ body {
   color: #333333;
 }
 
+.buy-it-now {
+  padding: 50px 0 50px 0;
+}
+
 .buy-it-now__header-text {
   margin: 0 0 29px 0;
   font-size: 30px;
@@ -269,9 +273,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   color: #f5f5f5;
   background-color: #445162;
   border-radius: 5px;
@@ -308,5 +311,135 @@ body {
   padding: 14px 0 14px 0;
   width: 260px;
   border-radius: 5px;
+}
+
+.footer {
+  padding: 53px 246px 49px 249px;
+  background-color: #445162;
+}
+
+.footer__header {
+  text-align: center;
+  margin: 0 0 31px 0;
+}
+
+.footer__contact-form-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+}
+
+.footer__input {
+  min-height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 0 0 21px 0;
+}
+
+.footer__textarea {
+  border-radius: 10px;
+  min-height: 170px;
+  font-family: Arial;
+  font-size: 16px;
+  margin: 0 0 21px 0;
+}
+
+.footer__button {
+  padding: 14px 48px 14px 48px;
+  border-radius: 10px;
+}
+
+.footer__contacts {
+  margin: 0;
+  list-style: none;
+}
+
+.footer__contacts:nth-child(1) {
+  position: relative;
+}
+
+.footer__contacts:nth-child(2) {
+  position: relative;
+}
+
+.footer__contacts:nth-child(3) {
+  position: relative;
+}
+
+.footer__contacts:nth-child(4) {
+  position: relative;
+}
+
+.footer__contacts__contacts-item:nth-child(1):before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/skype.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__contacts:nth-child(2):before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icq-logo.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__contacts:nth-child(3):before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/email.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__contacts:nth-child(4):before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/phone.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__social:nth-child(1) {
+  background-image: url("../img/twitter.svg");
+  font-size: 90px;
 }
 /*# sourceMappingURL=style.css.map */
