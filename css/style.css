@@ -113,14 +113,15 @@ body {
 .dignity {
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #f5f5f5;
-  padding: 45px 70px 0 50px;
+  padding: 50px 50px 25px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .dignity__title {
@@ -253,7 +254,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px;
+  padding: 50px 50px 20px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .reviews__header-text {
@@ -311,7 +314,9 @@ body {
 }
 
 .buy-it-now {
-  padding: 50px 0 50px 0;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .buy-it-now__header-text {
@@ -373,6 +378,7 @@ body {
   text-align: center;
   color: #445162;
   background-color: #f5f5f5;
+  text-transform: uppercase;
 }
 
 .buy-it-now__list {
@@ -396,6 +402,7 @@ body {
           box-sizing: border-box;
   width: 260px;
   border-radius: 5px;
+  margin: 10px auto 0 auto;
 }
 
 .buy-it-now__button:hover {
@@ -403,8 +410,12 @@ body {
 }
 
 .footer {
-  padding: 53px 246px 49px 249px;
+  padding: 50px;
   background-color: #445162;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  width: 100%;
 }
 
 .footer__header {
@@ -457,6 +468,11 @@ body {
   margin: 0 auto;
   font-weight: 600;
   color: #445162;
+  background-color: #fff;
+  border: none;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .footer__contacts {
@@ -467,26 +483,33 @@ body {
 }
 
 .footer__contacts:nth-child(1) {
-  position: relative;
+  padding: 0;
 }
 
 .footer__contacts:nth-child(2) {
-  position: relative;
+  padding: 0;
 }
 
 .footer__contacts:nth-child(3) {
-  position: relative;
+  padding: 0;
 }
 
 .footer__contacts:nth-child(4) {
+  padding: 0;
+}
+
+.footer__contacts-item {
   position: relative;
+  padding: 0 0 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .footer__contacts-item:nth-child(1):before {
   content: "";
   display: block;
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 0;
   width: 32px;
   height: 32px;
@@ -500,7 +523,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 42px;
+  top: 0;
   left: 0;
   width: 32px;
   height: 32px;
@@ -514,7 +537,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 82px;
+  top: 0;
   left: 0;
   width: 32px;
   height: 32px;
@@ -528,7 +551,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 122px;
+  top: 0;
   left: 0;
   width: 32px;
   height: 32px;
